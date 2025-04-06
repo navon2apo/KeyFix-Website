@@ -1,1 +1,164 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFix - Keyboard Layout & Translation Extension</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><img src="assets/img/keyfix-logo.png" alt="KeyFix Logo" class="logo">KeyFix</h1>
+            <p class="tagline">Fix keyboard layout issues and translate text instantly</p>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero gradient-bg">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Make typing between languages seamless</h2>
+                    <p>KeyFix automatically detects and fixes text typed in the wrong keyboard layout, and offers instant translations between multiple languages.</p>
+                    <a href="https://chrome.google.com/webstore/detail/[YOUR-EXTENSION-ID]" class="button primary">Install KeyFix</a>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/img/keyfix-main.png" alt="KeyFix in action">
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>🔄 Layout Fixing</h3>
+                        <p>Automatically detect and fix text typed in the wrong keyboard layout with a single click.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🌐 Translation</h3>
+                        <p>Translate selected text between multiple languages instantly.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🔒 Privacy First</h3>
+                        <p>All keyboard layout fixing happens locally on your device - no data sent to servers.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>⚡ Fast & Lightweight</h3>
+                        <p>KeyFix is designed to work quickly without slowing down your browsing experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Works Anywhere section based on first image -->
+        <section class="works-anywhere gradient-bg">
+            <div class="container">
+                <h2>WORKS ANYWHERE.</h2>
+                <h3>WHETHER YOU'RE CHATTING, WRITING EMAILS, OR EDITING DOCUMENTS,</h3>
+                <p class="highlight">KEYFIX FITS RIGHT IN.</p>
+                <p class="subtitle">BOOST YOUR TYPING FLOW WITHOUT SWITCHING TABS.</p>
+                <div class="showcase-image">
+                    <img src="assets/img/keyfix-main.png" alt="KeyFix working across multiple platforms">
+                </div>
+            </div>
+        </section>
+        
+        <!-- How It Works section with simpler layout -->
+        <section class="how-it-works">
+            <div class="container">
+                <h2>How KeyFix Works</h2>
+                
+                <div class="tutorial-tabs">
+                    <button class="tab-button active" data-tab="fix-keyboard">Fix Keyboard Layout</button>
+                    <button class="tab-button" data-tab="translate">Translate Text</button>
+                    <button class="tab-button" data-tab="feedback">Feedback System</button>
+                </div>
+                
+                <div class="tutorial-content">
+                    <!-- Fix Keyboard Layout content -->
+                    <div class="tab-content active" id="fix-keyboard-content">
+                        <div class="tutorial-wide">
+                            <img src="assets/img/tutorial-fix-1.png" alt="Fix keyboard layout demonstration">
+                        </div>
+                    </div>
+                    
+                    <!-- Translation content -->
+                    <div class="tab-content" id="translate-content">
+                        <div class="tutorial-wide">
+                            <img src="assets/img/tutorial-translate-1.png" alt="Translation feature demonstration">
+                        </div>
+                    </div>
+                    
+                    <!-- Feedback system content -->
+                    <div class="tab-content" id="feedback-content">
+                        <div class="tutorial-wide">
+                            <img src="assets/img/tutorial-settings.png" alt="KeyFix feedback system">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Instantly fix and translate section -->
+        <section class="instant-fix gradient-bg">
+            <div class="container">
+                <h2>FIX <span class="highlight-blue">KEYBOARD</span> AND <span class="highlight-purple">TRANSLATE</span> INSTANTLY — RIGHT WHERE YOU TYPE.</h2>
+                <p>SUPPORTS DOZENS OF LANGUAGES.</p>
+                <p>JUST <span class="highlight-purple">HIGHLIGHT</span> THE PART YOU WANT TO FIX OR TRANSLATE — AND IT HAPPENS LIKE MAGIC.</p>
+                <p>NO SWITCHING TABS. NO INTERRUPTIONS.</p>
+                <p>CHOOSE. TRANSLATE. DONE. <span class="highlight-purple">RIGHT INSIDE YOUR TEXT FIELD.</span></p>
+                
+                <div class="showcase-image">
+                    <img src="assets/img/tutorial-translate-1.png" alt="KeyFix translation demonstration">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Video demonstration section -->
+        <section class="video-demo">
+            <div class="container">
+                <h2>See KeyFix in Action</h2>
+                <div class="video-container">
+                    <!-- Replace YOUR_VIDEO_ID with your actual YouTube video ID -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 KeyFix. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="support.html">Support</a>
+                <a href="https://github.com/navon2apo/KeyFixit/issues">Report an Issue</a>
+            </nav>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple tab functionality for the tutorial
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons and content
+                    document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show corresponding content
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId + '-content').classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
