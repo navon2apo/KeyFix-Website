@@ -147,7 +147,9 @@ main {
 .hero p {
     font-size: 18px;
     margin-bottom: 30px;
-    color: #555;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0 2px 4px rgba(12, 240, 23, 0.2);
 }
 
 .hero-image img {
@@ -158,22 +160,36 @@ main {
 /* Button styles */
 .button {
     display: inline-block;
-    padding: 12px 24px;
-    border-radius: 4px;
+    padding: 14px 28px;
+    border-radius: 8px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 1.1em;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .primary {
-    background-color: #4a76fb;
-    color: white;
+    background-color: white;
+    color: var(--highlight-blue);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .primary:hover {
-    background-color: #3a66eb;
+    background-color: var(--highlight-blue);
+    color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(74, 118, 251, 0.4);
+    box-shadow: 0 8px 25px rgba(232, 234, 238, 0.932);
+}
+
+.gradient-bg .primary {
+    background-color: rgb(240, 17, 229);
+    color: var(--highlight-blue);
+}
+
+.gradient-bg .primary:hover {
+    background-color: var(--highlight-blue);
+    color: white;
 }
 
 /* Features section */
