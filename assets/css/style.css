@@ -211,12 +211,12 @@ main {
 }
 
 .highlight-blue {
-    color: var(--highlight-blue);
+    color: #4a76fb;
     font-weight: bold;
 }
 
 .highlight-purple {
-    color: var(--highlight-purple);
+    color: #9747ff;
     font-weight: bold;
 }
 
