@@ -100,13 +100,13 @@ main {
 .gradient-bg .highlight-blue {
     color: white;
     font-weight: bold;
-    text-shadow: 0 0 10px rgba(74, 118, 251, 0.8);
+    text-shadow: 0 0 15px var(--highlight-white);
 }
 
 .gradient-bg .highlight-purple {
     color: white;
     font-weight: bold;
-    text-shadow: 0 0 10px rgba(151, 71, 255, 0.8);
+    text-shadow: 0 0 15px var(--highlight-white);
 }
 
 .gradient-bg p {
@@ -237,12 +237,12 @@ main {
 }
 
 .highlight-blue {
-    color: #4a76fb;
+    color: var(--highlight-blue);
     font-weight: bold;
 }
 
 .highlight-purple {
-    color: #9747ff;
+    color: var(--highlight-purple);
     font-weight: bold;
 }
 
