@@ -94,18 +94,24 @@ main {
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .gradient-bg .highlight-blue {
-    color: #4a76fb;
+    color: white;
     font-weight: bold;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 10px rgba(74, 118, 251, 0.8);
 }
 
 .gradient-bg .highlight-purple {
-    color: #9747ff;
+    color: white;
     font-weight: bold;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 10px rgba(151, 71, 255, 0.8);
+}
+
+.gradient-bg p {
+    color: white;
+    font-size: 1.2em;
 }
 
 /* Hero section */
